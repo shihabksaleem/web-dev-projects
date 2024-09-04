@@ -19,11 +19,81 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+    .box-container {
+      background-color: black;
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+
+    }
+
+
+    .bx {
+      background-color: #F0F1EC;
+    }
+
+    .one {
+      background-color: #E72F24;
+    }
+
+    .two {
+      grid-column: span 3;
+    }
+
+    .three {
+      grid-row: span 2;
+    }
+
+    .four {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .five {
+      border-bottom: 10px solid #000;
+      background-color: #004592;
+    }
+
+    .six {
+      grid-row: span 2;
+
+    }
+
+    .eight {
+      background-color: #F9D01E;
+    }
+
+    .nine {
+      background-color: #232629;
+    }
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
+  <div class="box-container">
+    <div class="bx one">1</div>
+    <div class="bx two">2</div>
+    <div class="bx three">3</div>
+    <div class="bx four">4</div>
+    <div class="bx five">5</div>
+    <div class="bx six">6</div>
+    <div class="bx seven">7</div>
+    <div class="bx eight">8</div>
+    <div class="bx nine">9</div>
+    <!-- <div class="bx ten">10</div>
+    <div class="bx eleven">11</div>
+    <div class="bx twelve">12</div>
+    <div class="bx thirteen">13</div>
+    <div class="bx fourteen">14</div>
+    <div class="bx fifteen">15</div>
+    <div class="bx sixteen">16</div> -->
+
+
+  </div>
 </body>
 
 </html>
