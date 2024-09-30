@@ -1,8 +1,68 @@
-section{
-  
+/* Colors */
+:root {
+    --very-dark-cream: #9b4819;
+    --dark-cream: #bd8f53;
+    --light-cream: #fcf5e7;
+    --dark-green: #314028;
+    --pink: #ff5139;
 }
-/* #9b4819 - verry dartk cream  */
-/* ##bd8f53 -- dark cream */
-/* #fcf5e7 - light cream */
-/* #314028 - dark green  */
-/* #ff5139 - pink  */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Carlito", sans-serif;
+}
+
+/* Main Logo */
+#main-logo {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 100px
+}
+
+/* Intro Section */
+#intro {
+    text-align: center;
+    background-color: var(--light-cream);
+    padding: 2rem 0;
+}
+
+#intro-name-highlight {
+    color: var(--very-dark-cream); /* Color for 'I Am Shihab' */
+    font-weight: 500;
+    font-size: 5rem;
+    font-family: "Radley", serif;
+    font-style: normal;
+}
+
+#intro-name {
+    font-size: 5rem;
+    font-family: "Radley", serif;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0;
+}
+
+#intro-description {
+    font-family: "Carlito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    margin: 0.5rem auto; /* Centering the text */
+    max-width: 600px; /* Set a specific width */
+    line-height: 1.5; /* Adjust line height for better readability */
+}
+
+#hire-me-text {
+    font-size: 1.5rem;
+    font-family: "Radley", serif;
+    font-weight: 300;
+    font-style: italic;
+    color:  var(--very-dark-cream);
+    margin-top: 150px; 
+}
+
+/* gallery  */
+#image-gallery{
+    background-color:  var(--very-dark-cream);
+}
