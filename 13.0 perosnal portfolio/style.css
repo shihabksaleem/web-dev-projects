@@ -64,5 +64,41 @@ body {
 
 /* gallery  */
 #image-gallery{
+    position: relative;
+    height: 75vh;
     background-color:  var(--very-dark-cream);
+}
+.item1{
+    width: 200px;
+    position: relative;
+    display: block;
+    margin: auto auto;
+   
+
+}
+
+.item2{
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}.item3{
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}.item4{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}.item5{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
 }
