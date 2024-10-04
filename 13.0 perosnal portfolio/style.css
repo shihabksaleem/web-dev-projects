@@ -73,7 +73,7 @@ body {
 /* gallery  */
 #image-gallery{
     position: relative;
-    height: 75vh;
+ 
     background-color:  var(--very-dark-cream);
 }
 .item1{
@@ -122,7 +122,7 @@ body {
 }
 #about {
     text-align: left;
-    height: 75vh;
+
     display: flex; /* Enables flexbox layout */
     align-items: center; /* Vertically centers the content */
     gap: 20px; /* Adds some space between the div and the image */
@@ -145,7 +145,7 @@ body {
 
 
 .services-section {
-    height: 75vh;
+
     text-align: center;
     padding: 50px 20px;
     background-color: #f9f6f2; /* Similar light background color */
