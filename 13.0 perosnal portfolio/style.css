@@ -6,8 +6,16 @@
     --dark-green: #314028;
     --pink: #ff5139;
 }
+h2{
+    color: var(--very-dark-cream); /* Color for 'I Am Shihab' */
+    font-weight: normal;
+    font-size: 3rem;
+    font-family: "Radley", serif;
+    font-style: normal; 
+}
 
 body {
+    background-color: var(--light-cream);
     margin: 0;
     padding: 0;
     font-family: "Carlito", sans-serif;
@@ -102,3 +110,213 @@ body {
     left: 0;
 
 }
+
+
+/* about section  */
+
+
+
+#about h2{
+    font-style: italic;
+
+}
+#about {
+    text-align: left;
+    height: 75vh;
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically centers the content */
+    gap: 20px; /* Adds some space between the div and the image */
+    justify-content: center;
+}
+
+#about div {
+    width:30%;
+}
+
+#profile-image {
+    height: 250px;
+    width: 150px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+/* service section */
+
+
+
+.services-section {
+    height: 75vh;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f6f2; /* Similar light background color */
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    color: #a25329; /* Darker, warm color for headings */
+    margin-bottom: 40px;
+    font-family: 'Georgia', serif; /* A serif font for elegance */
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Makes the layout responsive */
+}
+
+.service-item {
+    /* background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+    width: 280px; /* Adjust width based on the desired size */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Adds a slight zoom on hover */
+}
+
+.service-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Circular images like in your example */
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-item hr {
+    width: 50px;
+    margin: 10px auto;
+    border-top: 2px solid #a25329; /* Styled divider */
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* ------------------------------ */
+.qualification-section {
+    text-align: center;
+    padding: 50px 20px;
+    /* background-color: #f9f6f2; Same light background color */
+}
+
+.qualification-section h2 {
+    font-size: 2.5rem;
+    color: #a25329; /* Darker brown color for headings */
+    margin-bottom: 40px;
+    font-family: 'Georgia', serif; /* Serif font for an elegant look */
+}
+
+.qualification-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Makes the layout responsive */
+}
+
+.qualification-item {
+    /* background-color: #fff; */
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px; /* Adjust width to fit content */
+    text-align: center;
+}
+
+.qualification-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.qualification-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.qualification-title {
+    font-weight: bold;
+    color: #a25329; /* Use the same brown color */
+    margin: 5px 0;
+}
+
+.qualification-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* ---------------------------- */
+
+.project-gallery-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f6f2;
+}
+
+.project-gallery-section h2 {
+    font-size: 2.5rem;
+    color: #a25329; /* Dark brown heading */
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.project-gallery-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allows the gallery to be responsive */
+}
+
+.project-item {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.project-item h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.project-item:hover {
+    transform: translateY(-10px); /* Adds a subtle hover effect */
+}
+
+.project-item:hover h3 {
+    color: #a25329; /* Change color on hover */
+}
+ /* ------------------------- */
