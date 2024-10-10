@@ -5,12 +5,14 @@
     --light-cream: #fcf5e7;
     --dark-green: #314028;
     --pink: #ff5139;
+    --carlito-font :"Carlito", sans-serif;
+    --radley-font :"Radley", serif;
 }
 h2{
     color: var(--very-dark-cream); /* Color for 'I Am Shihab' */
     font-weight: normal;
     font-size: 3rem;
-    font-family: "Radley", serif;
+    font-family:  var(--radley-font);
     font-style: normal; 
 }
 
@@ -18,7 +20,7 @@ body {
     background-color: var(--light-cream);
     margin: 0;
     padding: 0;
-    font-family: "Carlito", sans-serif;
+    font-family: var(--carlito-font);
 }
 
 /* Main Logo */
@@ -39,20 +41,20 @@ body {
     color: var(--very-dark-cream); /* Color for 'I Am Shihab' */
     font-weight: 500;
     font-size: 5rem;
-    font-family: "Radley", serif;
+    font-family: var(--radley-font);
     font-style: normal;
 }
 
 #intro-name {
     font-size: 5rem;
-    font-family: "Radley", serif;
+    font-family: var(--radley-font);
     font-weight: 500;
     font-style: italic;
     margin: 0;
 }
 
 #intro-description {
-    font-family: "Carlito", sans-serif;
+    font-family: var(--carlito-font);
     font-weight: 400;
     font-style: normal;
     font-size: 2rem;
@@ -63,56 +65,68 @@ body {
 
 #hire-me-text {
     font-size: 1.5rem;
-    font-family: "Radley", serif;
+    font-family: var(--radley-font);
     font-weight: 300;
     font-style: italic;
     color:  var(--very-dark-cream);
     margin-top: 150px; 
 }
 
-/* gallery  */
-#image-gallery{
-    position: relative;
- 
-    background-color:  var(--very-dark-cream);
-}
-.item1{
-    width: 200px;
-    position: relative;
-    display: block;
-    margin: auto auto;
-   
-
-}
-
-.item2{
-    width: 200px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-}.item3{
-    width: 200px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-}.item4{
-    width: 200px;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-}.item5{
-    width: 200px;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-}
+/* ----------Image Gallery Start-----------------------  */
 
 
-/* about section  */
+  
+  .gallery-container {
+    background-color: var(--very-dark-cream);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Six columns */
+    grid-template-rows: repeat(4, 150px); /* Four rows with fixed height */
+    gap: 20px; /* Adjust space between items */
+    padding: 20px;
+  }
+  
+  /* Individual gallery items styling */
+  .gallery-item {
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px; /* Optional, for rounded corners */
+  }
+  
+  /* Positioning items irregularly */
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-image: url('./images/item-2.png'); /* Add your image */
+  }
+  
+  .item2 {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 1;
+    background-image: url('./images/item-3.png');
+  }
+  
+  .item3 {
+    grid-column: 2 / span 3;
+    grid-row: 3 / span 2;
+    background-image: url('./images/item-4.png');
+  }
+  
+  .item4 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    background-image: url('./images/item-5.png');
+  }
+  
+  .item5 {
+    grid-column: 5 / span 2;
+    grid-row: 3 / span 2;
+    background-image: url('./images/item-6.png');
+  }
+/* ----------Image Gallery End-----------------------  */
+
+  
+
+/* ---------------About section Start----------------------- */
 
 .about-section {
     background-color: #f5f1e9; /* Light beige background */
@@ -156,6 +170,8 @@ body {
     max-width: 400px; /* Adjust the image size */
     border-radius: 20px; /* Rounded corners */
 }
+/* ---------------About section End----------------------- */
+
 
 
 /* service section */
@@ -339,7 +355,7 @@ body {
 }
  /* ------------------------- */
  .testimonials-section {
-    background-color: #1f342f; /* Dark green background */
+    background-color: var(--dark-green); /* Dark green background */
     color: #fff; /* White text */
     padding: 60px 20px;
     text-align: center;
@@ -361,7 +377,7 @@ body {
 }
 
 .testimonial-item {
-    background-color: #2c493d; /* Slightly lighter green */
+    background-color: var(--dark-green); 
     padding: 30px;
     border-radius: 12px;
     max-width: 300px;
