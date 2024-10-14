@@ -450,8 +450,17 @@ body {
     color: #fff;
 }
 
+#contact{
+    display:  flex;
+}
+
+.contact-social{
+    flex: 1;
+}
+
 .contact-info {
-    display: flex;
+  flex: 1;
+
     gap: 40px;
 }
 
