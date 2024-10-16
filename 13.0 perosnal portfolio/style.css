@@ -5,15 +5,17 @@
     --light-cream: #fcf5e7;
     --dark-green: #314028;
     --pink: #ff5139;
-    --carlito-font :"Carlito", sans-serif;
-    --radley-font :"Radley", serif;
+    --carlito-font: "Carlito", sans-serif;
+    --radley-font: "Radley", serif;
 }
-h2{
-    color: var(--very-dark-cream); /* Color for 'I Am Shihab' */
+
+h2 {
+    color: var(--very-dark-cream);
+    /* Color for 'I Am Shihab' */
     font-weight: normal;
     font-size: 3rem;
-    font-family:  var(--radley-font);
-    font-style: normal; 
+    font-family: var(--radley-font);
+    font-style: normal;
 }
 
 body {
@@ -38,7 +40,8 @@ body {
 }
 
 #intro-name-highlight {
-    color: var(--very-dark-cream); /* Color for 'I Am Shihab' */
+    color: var(--very-dark-cream);
+    /* Color for 'I Am Shihab' */
     font-weight: 500;
     font-size: 5rem;
     font-family: var(--radley-font);
@@ -58,9 +61,12 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 2rem;
-    margin: 0.5rem auto; /* Centering the text */
-    max-width: 600px; /* Set a specific width */
-    line-height: 1.5; /* Adjust line height for better readability */
+    margin: 0.5rem auto;
+    /* Centering the text */
+    max-width: 600px;
+    /* Set a specific width */
+    line-height: 1.5;
+    /* Adjust line height for better readability */
 }
 
 #hire-me-text {
@@ -68,79 +74,87 @@ body {
     font-family: var(--radley-font);
     font-weight: 300;
     font-style: italic;
-    color:  var(--very-dark-cream);
-    margin-top: 150px; 
+    color: var(--very-dark-cream);
+    margin-top: 150px;
 }
 
 /* ----------Image Gallery Start-----------------------  */
 
 
-  
-  .gallery-container {
+
+.gallery-container {
     background-color: var(--very-dark-cream);
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* Six columns */
-    grid-template-rows: repeat(4, 150px); /* Four rows with fixed height */
-    gap: 20px; /* Adjust space between items */
+    grid-template-columns: repeat(6, 1fr);
+    /* Six columns */
+    grid-template-rows: repeat(4, 150px);
+    /* Four rows with fixed height */
+    gap: 20px;
+    /* Adjust space between items */
     padding: 20px;
-  }
-  
-  /* Individual gallery items styling */
-  .gallery-item {
+}
+
+/* Individual gallery items styling */
+.gallery-item {
     background-size: cover;
     background-position: center;
-    border-radius: 20px; /* Optional, for rounded corners */
-  }
-  
-  /* Positioning items irregularly */
-  .item1 {
+    border-radius: 20px;
+    /* Optional, for rounded corners */
+}
+
+/* Positioning items irregularly */
+.item1 {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
-    background-image: url('./images/item-2.png'); /* Add your image */
-  }
-  
-  .item2 {
+    background-image: url('./images/item-2.png');
+    /* Add your image */
+}
+
+.item2 {
     grid-column: 4 / span 3;
     grid-row: 1 / span 1;
     background-image: url('./images/item-3.png');
-  }
-  
-  .item3 {
+}
+
+.item3 {
     grid-column: 2 / span 3;
     grid-row: 3 / span 2;
     background-image: url('./images/item-4.png');
-  }
-  
-  .item4 {
+}
+
+.item4 {
     grid-column: 1 / span 1;
     grid-row: 4 / span 1;
     background-image: url('./images/item-5.png');
-  }
-  
-  .item5 {
+}
+
+.item5 {
     grid-column: 5 / span 2;
     grid-row: 3 / span 2;
     background-image: url('./images/item-6.png');
-  }
+}
+
 /* ----------Image Gallery End-----------------------  */
 
-  
+
 
 /* ---------------About section Start----------------------- */
 
 .about-section {
-    background-color: #f5f1e9; /* Light beige background */
+    background-color: #f5f1e9;
+    /* Light beige background */
     padding: 80px 20px;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .about-content {
     display: flex;
     max-width: 1200px;
     align-items: center;
-    gap: 40px; /* Space between text and image */
+    gap: 40px;
+    /* Space between text and image */
 }
 
 .about-text {
@@ -149,14 +163,16 @@ body {
 
 .about-text h2 {
     font-size: 2.5rem;
-    color: #9d4b28; /* Brown color for the heading */
+    color: #9d4b28;
+    /* Brown color for the heading */
     font-family: 'Georgia', serif;
     font-style: italic;
 }
 
 .about-text p {
     font-size: 1.1rem;
-    color: #333; /* Darker text for contrast */
+    color: #333;
+    /* Darker text for contrast */
     line-height: 1.6;
 }
 
@@ -167,9 +183,12 @@ body {
 
 .about-image img {
     width: 100%;
-    max-width: 400px; /* Adjust the image size */
-    border-radius: 20px; /* Rounded corners */
+    max-width: 400px;
+    /* Adjust the image size */
+    border-radius: 20px;
+    /* Rounded corners */
 }
+
 /* ---------------About section End----------------------- */
 
 
@@ -182,14 +201,17 @@ body {
 
     text-align: center;
     padding: 50px 20px;
-    background-color: #f9f6f2; /* Similar light background color */
+    background-color: #f9f6f2;
+    /* Similar light background color */
 }
 
 .services-section h2 {
     font-size: 2.5rem;
-    color: #a25329; /* Darker, warm color for headings */
+    color: #a25329;
+    /* Darker, warm color for headings */
     margin-bottom: 40px;
-    font-family: 'Georgia', serif; /* A serif font for elegance */
+    font-family: 'Georgia', serif;
+    /* A serif font for elegance */
 }
 
 .services-container {
@@ -197,7 +219,8 @@ body {
     justify-content: space-around;
     align-items: center;
     gap: 30px;
-    flex-wrap: wrap; /* Makes the layout responsive */
+    flex-wrap: wrap;
+    /* Makes the layout responsive */
 }
 
 .service-item {
@@ -205,19 +228,22 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     padding: 20px;
-    width: 280px; /* Adjust width based on the desired size */
+    width: 280px;
+    /* Adjust width based on the desired size */
     text-align: center;
     transition: transform 0.3s ease;
 }
 
 .service-item:hover {
-    transform: scale(1.05); /* Adds a slight zoom on hover */
+    transform: scale(1.05);
+    /* Adds a slight zoom on hover */
 }
 
 .service-item img {
     width: 100px;
     height: 100px;
-    border-radius: 50%; /* Circular images like in your example */
+    border-radius: 50%;
+    /* Circular images like in your example */
     margin-bottom: 20px;
     object-fit: cover;
 }
@@ -231,7 +257,8 @@ body {
 .service-item hr {
     width: 50px;
     margin: 10px auto;
-    border-top: 2px solid #a25329; /* Styled divider */
+    border-top: 2px solid #a25329;
+    /* Styled divider */
 }
 
 .service-item p {
@@ -250,9 +277,11 @@ body {
 
 .qualification-section h2 {
     font-size: 2.5rem;
-    color: #a25329; /* Darker brown color for headings */
+    color: #a25329;
+    /* Darker brown color for headings */
     margin-bottom: 40px;
-    font-family: 'Georgia', serif; /* Serif font for an elegant look */
+    font-family: 'Georgia', serif;
+    /* Serif font for an elegant look */
 }
 
 .qualification-container {
@@ -260,14 +289,16 @@ body {
     justify-content: space-around;
     align-items: center;
     gap: 30px;
-    flex-wrap: wrap; /* Makes the layout responsive */
+    flex-wrap: wrap;
+    /* Makes the layout responsive */
 }
 
 .qualification-item {
     /* background-color: #fff; */
     border-radius: 12px;
     padding: 20px;
-    width: 300px; /* Adjust width to fit content */
+    width: 300px;
+    /* Adjust width to fit content */
     text-align: center;
 }
 
@@ -285,7 +316,8 @@ body {
 
 .qualification-title {
     font-weight: bold;
-    color: #a25329; /* Use the same brown color */
+    color: #a25329;
+    /* Use the same brown color */
     margin: 5px 0;
 }
 
@@ -306,7 +338,8 @@ body {
 
 .project-gallery-section h2 {
     font-size: 2.5rem;
-    color: #a25329; /* Dark brown heading */
+    color: #a25329;
+    /* Dark brown heading */
     margin-bottom: 20px;
     font-family: 'Georgia', serif;
 }
@@ -321,7 +354,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Allows the gallery to be responsive */
+    flex-wrap: wrap;
+    /* Allows the gallery to be responsive */
 }
 
 .project-item {
@@ -347,16 +381,21 @@ body {
 }
 
 .project-item:hover {
-    transform: translateY(-10px); /* Adds a subtle hover effect */
+    transform: translateY(-10px);
+    /* Adds a subtle hover effect */
 }
 
 .project-item:hover h3 {
-    color: #a25329; /* Change color on hover */
+    color: #a25329;
+    /* Change color on hover */
 }
- /* ------------------------- */
- .testimonials-section {
-    background-color: var(--dark-green); /* Dark green background */
-    color: #fff; /* White text */
+
+/* ------------------------- */
+.testimonials-section {
+    background-color: var(--dark-green);
+    /* Dark green background */
+    color: #fff;
+    /* White text */
     padding: 60px 20px;
     text-align: center;
     font-family: 'Georgia', serif;
@@ -377,7 +416,7 @@ body {
 }
 
 .testimonial-item {
-    background-color: var(--dark-green); 
+    background-color: var(--dark-green);
     padding: 30px;
     border-radius: 12px;
     max-width: 300px;
@@ -389,7 +428,8 @@ body {
 .testimonial-item blockquote {
     font-size: 1.2rem;
     font-style: italic;
-    color: #fff8e7; /* Light yellowish color */
+    color: #fff8e7;
+    /* Light yellowish color */
     margin-bottom: 15px;
 }
 
@@ -402,17 +442,22 @@ body {
 .testimonial-item h4 {
     font-size: 1rem;
     font-weight: bold;
-    color: #c9b79c; /* Muted gold */
+    color: #c9b79c;
+    /* Muted gold */
 }
 
 .testimonial-item:hover {
-    transform: translateY(-10px); /* Hover effect for the testimonial cards */
+    transform: translateY(-10px);
+    /* Hover effect for the testimonial cards */
 }
+
 /* //-------------------------- */
 
 .contact-section {
-    background-color: #9d4b28; /* Orange brown background */
-    color: #fff; /* White text */
+    background-color: #9d4b28;
+    /* Orange brown background */
+    color: #fff;
+    /* White text */
     padding: 60px 20px;
     text-align: left;
     font-family: 'Georgia', serif;
@@ -450,26 +495,27 @@ body {
     color: #fff;
 }
 
-#contact{
-      display:  flex;
+#contact {
+    display: flex;
     align-items: end;
 }
 
-.contact-social{
+.contact-social {
     flex: 1;
 }
-.contact-social h2{
+
+.contact-social h2 {
     font-size: 4rem;
 }
 
 .contact-info {
-  flex: 1;
+    flex: 1;
 
     gap: 40px;
 }
 
 .contact-item {
-   
+
     align-items: center;
     gap: 15px;
     font-size: 1.2rem;
@@ -482,11 +528,27 @@ body {
 
 .contact-item span {
     font-weight: bold;
-    color: #fff8e7; /* Light yellowish color */
+    color: #fff8e7;
+    /* Light yellowish color */
 }
 
 .contact-item p {
     margin: 0;
     font-size: 1.1rem;
     color: #fff;
+}
+
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+
+}
+
+.grid-item {
+
+    border: 1px solid rgba(0, 0, 0, 0.8);
+
+    font-size: 30px;
+    text-align: center;
 }
