@@ -453,7 +453,10 @@ body {
 
 /* //-------------------------- */
 
+
 .contact-section {
+    display: flex;
+
     background-color: #9d4b28;
     /* Orange brown background */
     color: #fff;
@@ -495,10 +498,7 @@ body {
     color: #fff;
 }
 
-#contact {
-    display: flex;
-    align-items: end;
-}
+
 
 .contact-social {
     flex: 1;
