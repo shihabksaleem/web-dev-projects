@@ -451,104 +451,76 @@ body {
     /* Hover effect for the testimonial cards */
 }
 
+
 /* //-------------------------- */
-
-
 .contact-section {
+    background-color: var(--very-dark-cream);
+    padding: 60px;
     display: flex;
+    gap: 60px;
+    justify-content: left;
+    align-items: end;
+    flex-wrap: wrap;
 
-    background-color: #9d4b28;
-    /* Orange brown background */
-    color: #fff;
-    /* White text */
-    padding: 60px 20px;
-    text-align: left;
-    font-family: 'Georgia', serif;
 }
 
-.contact-section h2 {
-    font-size: 2.5rem;
-    color: #fff;
-    margin-bottom: 20px;
-    font-style: italic;
-}
-
-.contact-section p {
-    font-size: 1.2rem;
-    color: #fff;
-    margin-bottom: 40px;
-}
-
-.social-links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 1.5rem;
-    color: #fff;
-    margin-bottom: 40px;
-}
-
-.social-links i {
-    font-size: 2rem;
-    color: #fff;
-}
-
-.social-links span {
-    font-size: 1.2rem;
-    color: #fff;
-}
+hr {
 
 
+    border: .3px solid var(--dark-cream);
 
-.contact-social {
-    flex: 1;
-}
 
-.contact-social h2 {
-    font-size: 4rem;
-}
-
-.contact-info {
-    flex: 1;
-
-    gap: 40px;
 }
 
 .contact-item {
+    max-width: 50%;
+}
 
+.methods {
+
+    justify-content: center;
+}
+
+
+.contact-item h2,
+p,
+h3,
+a,
+i,
+span {
+    color: var(--light-cream);
+}
+
+.contact-method {
+
+    display: flex;
     align-items: center;
     gap: 15px;
-    font-size: 1.2rem;
+
+    /* Adjust the spacing between the icon and the details */
+
+    margin-bottom: 30px;
 }
 
-.contact-item i {
-    font-size: 2rem;
-    color: #fff;
+.icon {
+    font-size: 40px;
+
+
 }
 
-.contact-item span {
-    font-weight: bold;
-    color: #fff8e7;
-    /* Light yellowish color */
-}
+/* .details {
+    display: flex;
+    flex-direction: column;
+} */
 
-.contact-item p {
+h3 {
     margin: 0;
-    font-size: 1.1rem;
-    color: #fff;
+    font-size: 18px;
+    /* Adjust the heading size */
 }
 
-
-.grid-container {
-    display: inline-grid;
-    grid-template-columns: auto auto;
-
-}
-
-.grid-item {
-
-    /* border: 1px solid rgba(0, 0, 0, 0.8); */
-
-    font-size: 30px;
-    text-align: center;
+p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    /* Adjust the text size */
 }
