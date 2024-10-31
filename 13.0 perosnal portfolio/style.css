@@ -458,10 +458,12 @@ body {
     background-color: var(--very-dark-cream);
     padding: 150px;
     display: flex;
+    flex-direction: column;
+
     gap: 100px;
-    justify-content: left;
+    /* justify-content: right; */
     align-items: end;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
 }
 
@@ -477,10 +479,6 @@ hr {
     max-width: 50%;
 }
 
-.methods {
-
-    justify-content: center;
-}
 
 
 .contact-item h2,
