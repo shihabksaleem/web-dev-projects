@@ -1,41 +1,55 @@
-
+var userClickedPattern = [];
 var gamePattern = [];
 var buttonColours = ["red", "blue", "green", "yellow"]; // my color list
-// variable to  store the random color
-
-function nextSequence() {
-    var randomNumber = Math.floor(Math.random() * 4); // for generating random number form 0-4
-    console.log(randomNumber);
-    return buttonColours[randomNumber];
-}
-var randomChosenColour = nextSequence();// to asign teh random color to the variable
-gamePattern.push(randomChosenColour);
 
 
-$("." + randomChosenColour).click(
+//to detect any button press in keyboard
+
+$(document).on('keypress', function (e) {
+
+
+    nextSequence();
+
+});
+
+$(".btn").click(
     function () {
-        $("." + randomChosenColour).fadeOut(100).fadeIn(100);
-        playSound(randomChosenColour);
+        var userChosenColour = $(this).attr("id");
+        userClickedPattern.push(userChosenColour);
+        console.log(userClickedPattern);
+        playSound(userChosenColour);
+        animatePress(userChosenColour);
     }
 );
 
-function playSound(color) {
-    if (color === "red") {
-        const redAudio = new Audio("./sounds/red.mp3");
-        redAudio.play();
-    } else if (color === "blue") {
-        const blueAudio = new Audio("./sounds/blue.mp3");
-        blueAudio.play();
-    } else if (color === "green") {
-        const greenAudio = new Audio("./sounds/green.mp3");
-        greenAudio.play();
-    } else if (color === "yellow") {
-        const yellowAudio = new Audio("./sounds/yellow.mp3");
-        yellowAudio.play();
-    } else {
-        const wrongAudio = new Audio("./sounds/wrong.mp3");
-        wrongAudio.play();
-    }
+
+function nextSequence() {
+
+    var randomNumber = Math.floor(Math.random() * 4);
+    var randomChosenColour = buttonColours[randomNumber];
+    gamePattern.push(randomChosenColour);
+
+    //1. Use jQuery to select the button with the same id as the randomChosenColour
+    //2. Use Google/Stackoverflow to figure out how you can use jQuery to animate a flash to the button selected in step 1.
+    $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+    playSound(randomChosenColour);
+    animatePress(randomChosenColour);
+
+}
+
+function playSound(name) {
+    var audio = new Audio("sounds/" + name + ".mp3");
+    audio.play();
+
+
+}
+
+function animatePress(currentColor) {
+    $("#" + currentColor).addClass("pressed");
+
+    setTimeout(function () {
+        $("#" + currentColor).removeClass("pressed");
+    }, 100);
 
 
 }
