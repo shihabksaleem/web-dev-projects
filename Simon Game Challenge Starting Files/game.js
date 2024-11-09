@@ -1,6 +1,6 @@
+var buttonColours = ["red", "blue", "green", "yellow"]; // my color list
 var userClickedPattern = [];
 var gamePattern = [];
-var buttonColours = ["red", "blue", "green", "yellow"]; // my color list
 var level = 0;
 var gameStarted = false;
 
@@ -12,9 +12,9 @@ $(document).on('keypress', function (e) {
         $('#level-title').text('Level ' + level);
 
         nextSequence();
+        gameStarted = true;
 
     }
-    gameStarted = true;
 
 });
 
@@ -33,6 +33,7 @@ $(".btn").click(
 
 
 function nextSequence() {
+    userClickedPattern = [];
     level++;
 
     $('#level-title').text('Level ' + level);
@@ -45,7 +46,6 @@ function nextSequence() {
     //2. Use Google/Stackoverflow to figure out how you can use jQuery to animate a flash to the button selected in step 1.
     $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
     playSound(randomChosenColour);
-    animatePress(randomChosenColour);
 
 
 }
@@ -70,19 +70,31 @@ function animatePress(currentColor) {
 }
 
 function checkAnswer(currentLevel) {
-    if (userClickedPattern[currentLevel] === gamePattern[gamePattern.length - 1]) {
+
+    if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
 
         console.log("success");
-        setTimeout(function () {
-            nextSequence();
-            userClickedPattern = [];
-        }, 1000);
 
 
+        if (userClickedPattern.length === gamePattern.length) {
+
+            setTimeout(function () {
+                nextSequence();
+            }, 1000);
+        }
     } else {
-        console.log("failed");
+        console.log("wrong");
+        playSound("wrong");
+        $("body").addClass("game-over");
 
+        setTimeout(function () {
+            $("body").removeClass("game-over");
+        }, 200);
+        $('#level-title').text('Game Over, Press Any Key to Restart');
+
+        // to start over 
+        gameStarted = false;
+        level = 0;
+        gamePattern = [];
     }
-
-
 }
