@@ -472,14 +472,14 @@ hr {
 
 }
 
+
+
 .contact-item {
+
     max-width: 50%;
 }
 
-.methods {
 
-    justify-content: center;
-}
 
 
 .contact-item h2,
@@ -497,9 +497,13 @@ span {
     align-items: center;
     gap: 15px;
 
-    /* Adjust the spacing between the icon and the details */
 
     margin-bottom: 30px;
+}
+
+.methods {
+
+    justify-content: center;
 }
 
 .icon {
@@ -508,19 +512,16 @@ span {
 
 }
 
-/* .details {
-    display: flex;
-    flex-direction: column;
-} */
+
 
 h3 {
     margin: 0;
     font-size: 18px;
-    /* Adjust the heading size */
+
 }
 
 p {
     margin: 5px 0 0 0;
     font-size: 16px;
-    /* Adjust the text size */
+
 }
