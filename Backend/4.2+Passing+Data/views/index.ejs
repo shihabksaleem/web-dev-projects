@@ -9,11 +9,23 @@
 
 <body>
   <!-- Write your code here -->
-  <form action="/submit" method="POST">
-    <input type="text" name="fName" placeholder="First name">
-    <input type="text" name="lName" placeholder="Last name">
-    <input type="submit" value="OK">
-  </form>
+  <% if(locals.dataLength){ %>
+
+    <h1>Your name have <%= dataLength %> chars
+    </h1>
+
+    <% } else{%>
+      <h1>enter your fullname</h1>
+
+      <% } %>
+
+
+
+        <form action="/submit" method="POST">
+          <input type="text" name="fName" placeholder="First name">
+          <input type="text" name="lName" placeholder="Last name">
+          <input type="submit" value="OK">
+        </form>
 </body>
 
 </html>
