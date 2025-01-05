@@ -12,10 +12,13 @@ Step 3: Add the routes to handle the render of the about and contact pages.
 Step 4: Add the partials to the about and contact pages to show the header and footer on those pages. */
 
 
+app.use(express.static("public")); // Step 2
 
+//
 app.get("/", (req, res) => {
   res.render("index.ejs");
 });
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
