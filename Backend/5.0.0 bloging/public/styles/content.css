@@ -1,23 +1,33 @@
 /* styles.css */
 :root {
-    --alto: #dbd7d7;       /* Light gray */
-    --charade: #282e37;    /* Dark gray */
-    --cream-can: #f4ca61;  /* Yellowish */
-    --medium-purple: #ae55df; /* Purple */
-  }
+  --alto: #dbd7d7;
+  /* Light gray */
+  --charade: #282e37;
+  /* Dark gray */
+  --cream-can: #f4ca61;
+  /* Yellowish */
+  --medium-purple: #ae55df;
+  /* Purple */
+}
 
 body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .gradient-container {
-    width: 100%; /* Full width */
-    height: 20px; /* Fixed height */
-    background: linear-gradient(
-        179deg,  
-        var(--cream-can),   
-       var(--cream-can),
-        var(--medium-purple), 
-        var(--medium-purple) );
-  }
+  font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+}
+
+.gradient-container {
+  width: 100%;
+  /* Full width */
+  height: 20px;
+  /* Fixed height */
+  background: linear-gradient(179deg,
+      var(--cream-can),
+      var(--cream-can),
+      var(--medium-purple),
+      var(--medium-purple));
+}
+
+#logo {
+  margin: 0 10px;
+}
