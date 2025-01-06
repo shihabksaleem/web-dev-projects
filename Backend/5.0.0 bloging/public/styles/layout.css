@@ -1,0 +1,4 @@
+.nav-link.active {
+    background-color: black  !important;  /* Set the background color to black */
+    color: white !important; /* Ensure the text is white for contrast */
+}
